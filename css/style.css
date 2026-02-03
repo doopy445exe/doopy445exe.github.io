@@ -17,7 +17,7 @@ body {
 
 }
 
-main {
+main{
 
 }
 
@@ -36,6 +36,14 @@ main input{
 
 main section#keyBoard {
     /** Grid eller liknade */
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-auto-rows: minmax(5rem,5rem);
+    grid-gap: 0.5rem;
+}
+
+#lcd {
+    height: 10rem;
 }
 
 @media (max-width: 767px) {
@@ -56,5 +64,24 @@ main section#keyBoard {
     main {
 
     }
+
+}
+
+
+/** BUTTON GRID**/
+
+
+
+
+.b7 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+#b8 {
+
+}
+
+#b9 {
 
 }
