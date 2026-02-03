@@ -14,7 +14,8 @@ html {
 }
 
 body {
-
+    padding: 1px;
+    background-color: black;
 }
 
 main{
@@ -37,13 +38,19 @@ main input{
 main section#keyBoard {
     /** Grid eller liknade */
     display: grid;
-    grid-template-columns: repeat(4);
-    grid-auto-rows: minmax(5rem,5rem);
-    grid-gap: 0.5rem;
+    grid-template-columns: 4;
+    grid-auto-columns: minmax(12rem,auto);
+    grid-auto-rows: 12rem;
+    grid-gap: 0.1rem;
 }
 
-#lcd {
-    height: 10rem;
+#add, #sub, #mul, #comma, #enter, #div, #clear {
+    color: rgb(46, 179, 209);
+}
+
+
+button {
+    font-size: 6rem;
 }
 
 @media (max-width: 767px) {
@@ -64,24 +71,5 @@ main section#keyBoard {
     main {
 
     }
-
-}
-
-
-/** BUTTON GRID**/
-
-
-
-
-.b7 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-#b8 {
-
-}
-
-#b9 {
 
 }
