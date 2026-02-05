@@ -33,16 +33,16 @@ main input{
 }
 
 main section#keyBoard {
-  /** Grid eller liknade */
     display: grid;
-    grid-template-columns: 4;
-    grid-auto-columns: minmax(12rem,auto);
-    grid-auto-rows: 12rem;
-    grid-gap: 0.1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+    width: 100%;
 }
 
 button {
-    font-size: 6rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: clamp(2.5rem, 6vw, 6rem);
     border: solid black 1px;
     border-radius: 10px;
 }
@@ -61,14 +61,17 @@ main input {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0.4rem;
+        width: 100%;
     }
 
     button {
+        width: 100%;
+        aspect-ratio: 1 / 1;
         font-size: clamp(2.5rem, 6vw, 6rem);
         border: solid black 1px;
         border-radius: 10px;
-        aspect-ratio: 1 / 1;
     }
+
     #clear {
         grid-column: span 4;
         aspect-ratio: auto;
@@ -86,13 +89,15 @@ main input {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0.4rem;
+        width: 100%;
     }
 
     button {
+        width: 100%;
+        aspect-ratio: 1 / 1;
         font-size: clamp(2.5rem, 6vw, 6rem);
         border: solid black 1px;
         border-radius: 10px;
-        aspect-ratio: 1 / 1;
     }
 
     #clear {
