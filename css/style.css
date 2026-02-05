@@ -36,7 +36,7 @@ main input{
     color: rgb(46, 179, 209);
 }
 
-
+@media (max-width: 767px) {
     main section#keyBoard {
       /** Grid eller liknade */
         display: grid;
@@ -52,7 +52,7 @@ main input{
         border-radius: 10px;
     }
 
-
+}
 
 @media (max-width: 339px) {
     main section#keyBoard {
