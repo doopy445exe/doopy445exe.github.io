@@ -19,10 +19,6 @@ body {
     margin-top: 10px;
 }
 
-main{
-
-}
-
 main input{
     width: 100%;
     font-size: 3.5rem;
@@ -36,43 +32,50 @@ main input{
     border-radius:4px;
 }
 
-main section#keyBoard {
-    /** Grid eller liknade */
-    display: grid;
-    grid-template-columns: 4;
-    grid-auto-columns: minmax(12rem,auto);
-    grid-auto-rows: 12rem;
-    grid-gap: 0.1rem;
-}
-
 #add, #sub, #mul, #comma, #enter, #div, #clear {
     color: rgb(46, 179, 209);
 }
 
 
-button {
-    font-size: 6rem;
-    border: solid black 1px;
-    border-radius: 10px;
-}
-
-@media (max-width: 767px) {
-    body {
-
+    main section#keyBoard {
+      /** Grid eller liknade */
+        display: grid;
+        grid-template-columns: 4;
+        grid-auto-columns: minmax(12rem,auto);
+        grid-auto-rows: 12rem;
+        grid-gap: 0.1rem;
     }
 
-    main {
-
+    button {
+        font-size: 6rem;
+        border: solid black 1px;
+        border-radius: 10px;
     }
 
-    main input{
 
-    }
-}
 
 @media (max-width: 339px) {
-    main {
-
+    main section#keyBoard {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.4rem;
     }
 
+    button {
+        font-size: clamp(2.5rem, 6vw, 6rem);
+        border: solid black 1px;
+        border-radius: 10px;
+        aspect-ratio: 1 / 1;
+    }
+
+    #clear {
+        grid-column: span 4;
+        aspect-ratio: auto;
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    main input {
+        font-size: clamp(2.5rem, 7vw, 3.5rem);
+    }
 }
