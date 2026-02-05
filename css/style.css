@@ -45,6 +45,7 @@ button {
     font-size: clamp(2.5rem, 6vw, 6rem);
     border: solid black 1px;
     border-radius: 10px;
+    min-width: 0;
 }
 
 main input {
@@ -70,6 +71,7 @@ main input {
         font-size: clamp(2.5rem, 6vw, 6rem);
         border: solid black 1px;
         border-radius: 10px;
+        min-width: 0;
     }
 
     #clear {
@@ -98,6 +100,7 @@ main input {
         font-size: clamp(2.5rem, 6vw, 6rem);
         border: solid black 1px;
         border-radius: 10px;
+        min-width: 0;
     }
 
     #clear {
