@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    padding: 1px;
+    padding: 5px;
     background-color: black;
     margin-top: 10px;
 }
@@ -41,7 +41,6 @@ main section#keyBoard {
 
 button {
     width: 100%;
-    aspect-ratio: 1 / 1;
     font-size: clamp(2.5rem, 6vw, 6rem);
     border: solid black 1px;
     border-radius: 10px;
@@ -75,10 +74,7 @@ main input {
     }
 
     #clear {
-        grid-column: span 4;
-        aspect-ratio: auto;
-        height: auto;
-        padding: 1.5rem 0;
+        aspect-ratio: 4 / 1;
     }
 
     main input {
@@ -91,7 +87,7 @@ main input {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0.4rem;
-        width: 100%;
+        width: 100%;    
     }
 
     button {
@@ -104,10 +100,7 @@ main input {
     }
 
     #clear {
-        grid-column: span 4;
-        aspect-ratio: auto;
-        height: auto;
-        padding: 1.5rem 0;
+        aspect-ratio: 4 / 1;
     }
 
     main input {
